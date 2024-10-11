@@ -18,6 +18,8 @@ Instalação sem ser em um ambiente virtual:
 
     sudo apt update
     sudo apt install python3-selenium
+    pip install robotframework robotframework-requests --break-system-packages
+    
 
     sudo -H pip install --upgrade selenium --break-system-packages
 
@@ -26,5 +28,7 @@ Instalação sem ser em um ambiente virtual:
 
 EXECUÇÃO:
     robot estrutura.robot (no caso o nome do arquivo desejado).
+
+
 
 
