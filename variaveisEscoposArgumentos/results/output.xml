@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.3 on linux)" generated="2024-10-11T14:32:25.515063" rpa="false" schemaversion="5">
+<suite id="s1" name="ExemplosArgumentos" source="/home/lucas/Área de trabalho/robot/variaveisEscoposArgumentos/ExemplosArgumentos.robot">
+<test id="s1-t1" name="Caso de teste de exemplo 01" line="8">
+<kw name="Uma keyword qualquer 01">
+<kw name="Uma subkeyword com argumentos">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-11T14:32:25.541664" level="INFO">Nome Usuário: Bruno Silva</msg>
+<arg>Nome Usuário: ${NOME_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-11T14:32:25.541507" elapsed="0.000215"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-11T14:32:25.541974" level="INFO">Email: bruno_silva@teste.com.br</msg>
+<arg>Email: ${EMAIL_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-11T14:32:25.541840" elapsed="0.000177"/>
+</kw>
+<arg>Bruno Silva</arg>
+<arg>bruno_silva@teste.com.br</arg>
+<status status="PASS" start="2024-10-11T14:32:25.541113" elapsed="0.001006"/>
+</kw>
+<kw name="Uma subkeyword com argumentos">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-11T14:32:25.543576" level="INFO">Nome Usuário: Lucas Viana</msg>
+<arg>Nome Usuário: ${NOME_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-11T14:32:25.543387" elapsed="0.000292"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-11T14:32:25.544190" level="INFO">Email: lucas@exemplo.com.br</msg>
+<arg>Email: ${EMAIL_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-11T14:32:25.543900" elapsed="0.000361"/>
+</kw>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.email}</arg>
+<status status="PASS" start="2024-10-11T14:32:25.542259" elapsed="0.002108"/>
+</kw>
+<kw name="Uma subkeyword com retorno">
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2024-10-11T14:32:25.546334" level="INFO">${MENSAGEM} = OK!Usuário é maior de idade!</msg>
+<var>${MENSAGEM}</var>
+<arg>${IDADE_USUARIO}&lt;18</arg>
+<arg>Não autorizado! O usuário ${NOME_USUARIO} é menor de idade!</arg>
+<arg>OK!Usuário é maior de idade!</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2024-10-11T14:32:25.546098" elapsed="0.000266"/>
+</kw>
+<return>
+<value>${MENSAGEM}</value>
+<status status="PASS" start="2024-10-11T14:32:25.546430" elapsed="0.000048"/>
+</return>
+<msg time="2024-10-11T14:32:25.546605" level="INFO">${MENSAGEM_ALERTA} = OK!Usuário é maior de idade!</msg>
+<var>${MENSAGEM_ALERTA}</var>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.idade}</arg>
+<status status="PASS" start="2024-10-11T14:32:25.544572" elapsed="0.002055"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-11T14:32:25.546862" level="INFO">OK!Usuário é maior de idade!</msg>
+<arg>${MENSAGEM_ALERTA}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-11T14:32:25.546725" elapsed="0.000181"/>
+</kw>
+<status status="PASS" start="2024-10-11T14:32:25.540801" elapsed="0.006158"/>
+</kw>
+<status status="PASS" start="2024-10-11T14:32:25.540160" elapsed="0.006935"/>
+</test>
+<doc>Exemplo de uso de variáveis como argumentos em Keywords</doc>
+<status status="PASS" start="2024-10-11T14:32:25.515927" elapsed="0.031509"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ExemplosArgumentos">ExemplosArgumentos</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-11T14:32:25.513533" level="WARN">Error in file '/home/lucas/Área de trabalho/robot/variaveisEscoposArgumentos/ExemplosArgumentos.robot' on line 26: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
