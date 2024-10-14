@@ -8,7 +8,7 @@ Resource            ./variables/my_user_and_passwords.robot
 
 *** Variables ***
 ${GITHUB_HOST}      https://api.github.com
-${ISSUES_URI}       /repos/mayribeirofernandes/myudemyrobotframeworkcourse/issues
+${ISSUES_URI}       /repos/Lucasvianaa-cpu/RobotFrameworkQAtests/issues
 
 *** Test Cases ***
 Exemplo: Postando com body template
